@@ -1,0 +1,15 @@
+
+
+.ytp-endscreen-content,
+#home-page-skeleton,
+ytd-two-column-browse-results-renderer,
+#guide-wrapper,
+#guide,
+#secondary {
+  display: none !important;
+}
+
+#page-manager {
+  display: block !important;
+  margin: 0 !important;
+}
