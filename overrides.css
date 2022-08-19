@@ -1,15 +1,20 @@
 
 
+[page-subtype="home"],
+#related,
 .ytp-endscreen-content,
 #home-page-skeleton,
-ytd-two-column-browse-results-renderer,
 #guide-wrapper,
 #guide,
-#secondary {
-  display: none !important;
+#secondary > * {
+    display: none !important;
 }
 
-#page-manager {
-  display: block !important;
-  margin: 0 !important;
+ytd-app[guide-persistent-and-visible] ytd-page-manager.ytd-app {
+    margin-left: 0 !important;
+}
+
+ytd-watch-flexy[is-two-columns_] #primary.ytd-watch-flexy {
+    position:relative !important;
+    left:calc( var(--ytd-watch-flexy-sidebar-width) / 2) !important;
 }
